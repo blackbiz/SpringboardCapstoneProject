@@ -16,14 +16,15 @@ anon_cols <- c('VOTERID', 'FIRSTNAME', 'LASTNAME', 'ADDR_NUM', 'ADDR_FRAC', 'ADD
 # Not dropping columns using rawdata %>% select(-one_of(anon_cols))
 
 # Remove month and day from BIRTHDATE
-anondata <- mutate(rawdata,
-       VOTERID = digest_each(VOTERID), 
-       FIRSTNAME = digest_each(FIRSTNAME))
+#anondata <- mutate(rawdata,
+#       VOTERID = digest_each(VOTERID), 
+#       FIRSTNAME = digest_each(FIRSTNAME))
 
 # Apply digest_each to all variables in one shot
 #?mutate_at()
 #mutate_at(.tbl, .vars, .funs, ..., .cols = NULL)
-#THIS IS WRONG - anondata <- mutate_at(rawdata, anon_cols, funs(digest_each(anon_cols)))
+anondata <- mutate_at(
+  .tbl = rawdata, .vars = anon_cols, .funs = "digest_each")
 
 # Convert dates to "01/01" plus the record year format for BIRTHDATE
 BIRTHTEMP <- as.Date(rawdata$BIRTHDATE, format = "%m/%d/%Y")
