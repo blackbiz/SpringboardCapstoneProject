@@ -8,7 +8,7 @@ digest_each <- function(x) {
 }
   
 # load data
-rawdata <- read_csv("data/VoterDataSmall1000.csv")
+rawdata <- read_csv("data/09221483_RANDOM_ORDER.csv", n_max = 1000)
 
 # Anonymize data
 anon_cols <- c('VOTERID', 'FIRSTNAME', 'LASTNAME', 'ADDR_NUM', 'ADDR_FRAC', 'ADDR_DIR', 'ADDR_STR', 'ADDR_TYPE', 'ADDR_PDIR', 'ADDR_OTHER', 'ADDR_ZIP4', 'PHONE')
