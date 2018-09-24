@@ -40,7 +40,7 @@ df <- tibble(
   mutate(vote_fraction = n_votes / n_reg) %>%
   print()
 # Verified in Excel using n_votes =COUNTIF($AR2:$DX2,">0"), n_reg =COUNTIF($AR$1:$DX$1,">"&$U2), vote_fraction = =EA2
-```
+
 write_csv(df, path = "data/VoteFraction.csv", col_names = TRUE)
 
 #mutate(anondata, )
