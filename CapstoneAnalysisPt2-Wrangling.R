@@ -89,7 +89,8 @@ ggplot(anondata, aes(x = PARTY)) +
 
 anondata %>%
   as_tibble() %>%
-  mutate(AGE = 2018 - "BIRTHDATE") # Work on this
+  mutate(AGE = as.integer((as.Date('2018-09-18') - BIRTHDATE)/365)) %>%
+  select(AGE) # Use lubridate function
 
 ggplot(anondata, aes(x= GENDER)) +
   geom_bar()
