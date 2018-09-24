@@ -76,7 +76,7 @@ anondata <- anondata[, -index]
 #139-11
 
 # Continue EDA
-summary(anondata[,44:128])
+summary(anondata[,44:128]) #Verify same columns after EDA update
 
 str(anondata)
 
@@ -89,11 +89,17 @@ ggplot(anondata, aes(x = PARTY)) +
 
 anondata %>%
   as_tibble() %>%
-  mutate(AGE = 2018 - 0)
+  mutate(AGE = 2018 - "BIRTHDATE") # Work on this
 
-#ggplot(anandata, aes(x= )) +
+ggplot(anondata, aes(x= GENDER)) +
+  geom_bar()
+
+ggplot(anondata, aes(x= ADDR_CITY)) +
+  geom_bar() +
+  coord_flip()
+
+#ggplot(anondata, aes(x= )) +
 #  geom_histogram()
-
 
 df <- anondata[,44:128]
 df_names <- names(df)
