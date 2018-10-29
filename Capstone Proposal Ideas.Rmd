@@ -6,6 +6,7 @@ output: html_document
 ---
 
 ### Proposal 1:
+
 Many may be shocked to hear that there hasn’t been a Democratic supervisor in the Town of Hempstead in its 155-year history. This is due to several factors, but none more evident than the partisan gerrymandering that has been plagued this county for generations. Packing and cracking of minority populations behind closed doors have rendered their voices mute as no matter how these communities vote, their voices are washed out in certain districts. Political districts were deliberately drawn in such a way to secure one party domination of the county’s town, assembly, and congressional delegation and that the process violated the U.S. and New York constitutions. I would like to bring to light the segregation of certain communities via maps and analysis to demonstrate how their votes, and therefore their voices, can be rendered mute.
 
 ***
