@@ -1,0 +1,19 @@
+---
+title: "Capstone Project Proposal Ideas"
+author: "Craig Forbes"
+date: "October 28, 2018"
+output: html_document
+---
+
+### Proposal 1:
+Many may be shocked to hear that there hasn’t been a Democratic supervisor in the Town of Hempstead in its 155-year history. This is due to several factors, but none more evident than the partisan gerrymandering that has been plagued this county for generations. Packing and cracking of minority populations behind closed doors have rendered their voices mute as no matter how these communities vote, their voices are washed out in certain districts. Political districts were deliberately drawn in such a way to secure one party domination of the county’s town, assembly, and congressional delegation and that the process violated the U.S. and New York constitutions. I would like to bring to light the segregation of certain communities via maps and analysis to demonstrate how their votes, and therefore their voices, can be rendered mute.
+
+***
+
+### Proposal 2:
+Who comes out to vote and why? Can this population be accurately estimated, or predicted? These questions and vast sums of monies and effort go into political campaigns to identify and micro-target potential voters. Armies of volunteers comb the streets during the last few days of a political campaign in what is known as GOTV (Get Out the Vote) activities. If one could increase the efficiency of the registered voters those armies target, a higher percentage of overall voters would ensue. Many theories of education, income, ethnicity have been tested to see if there is any correlation with who comes out to pull the lever. I would like to hypothesize and test whether housing value (Zillow Zestimate) can increase the prediction score of who votes in general, off-year, and local elections.
+
+***
+
+### Proposal 3:
+A smart person once postulated that the past is a powerful predictor of the future. Who comes out to vote and why? Can this population be accurately estimated, or predicted? These questions and vast sums of monies and effort go into political campaigns to identify and micro-target potential voters. Armies of volunteers comb the streets during the last few days of a political campaign in what is known as GOTV (Get Out the Vote) activities. If one could increase the efficiency of the registered voters those armies target, a higher percentage of overall voters would ensue. Does the distance at which a voter reside from their polling location correlate to their likelihood of voting in any given year, and for each level of government, including special elections? Can a prediction engine be created utilizing the voting history of each registered voter? Lastly, which features are most important in predicting this behavior?
