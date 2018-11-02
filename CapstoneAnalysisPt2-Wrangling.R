@@ -84,13 +84,16 @@ head(anondata)
 
 names(anondata)
 
+#Test Visuals:
+
 ggplot(anondata, aes(x = PARTY)) +
   geom_bar()
 
-anondata %>%
+anondata <- anondata %>%
   as_tibble() %>%
-  mutate(AGE = as.integer((as.Date('2018-09-18') - BIRTHDATE)/365)) %>%
-  select(AGE) # Use lubridate function
+  mutate(AGE = as.integer((as.Date('2018-09-18') - BIRTHDATE)/365))
+  #select(AGE) # Use lubridate function
+
 
 ggplot(anondata, aes(x= GENDER)) +
   geom_bar()
@@ -109,4 +112,8 @@ df_TrueFalse <- anondata$REG_DT %>%
   map(~ df_names > as.character(.x))
 
 # Presidential Election Dates
-Pres_Elec_DT <- c(1988-11-08, 1992-11-03, 1996-11-05, 2000-11-07, 2004-11-02, 2008-11-04, 2012-11-06, 2016-11-08)
+Pres_Elec_DT <- c('1988-11-08', '1992-11-03', '1996-11-05', '2000-11-07', '2004-11-02', '2008-11-04', '2012-11-06', '2016-11-08')
+
+g <- ggplot(anondata, aes(PARTY))
+g + geom_bar(aes(fill = PARTY))
+
